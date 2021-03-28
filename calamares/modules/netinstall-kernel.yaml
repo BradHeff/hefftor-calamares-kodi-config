@@ -1,0 +1,85 @@
+- name: "Linux kernel without any nvidia"
+  description: "Installs only the latest linux kernel (not the one from iso)"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - linux
+    - linux-headers
+- name: "Linux-lts kernel without any nvidia"
+  description: "Installs only the linux-lts kernel"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - linux-lts
+    - linux-lts-headers
+- name: "Linux-hardened kernel without any nvidia"
+  description: "Installs only the linux-hardened kernel"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - linux-hardened
+- name: "Linux-zen kernel without any nvidia"
+  description: "Installs only the linux-zen kernel"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - linux-zen
+    - linux-zen-headers
+- name: "Nvidia with linux kernel"
+  description: "Installs nvidia and linux kernel - check Arch wiki nvidia"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - linux
+    - linux-headers
+    - nvidia
+    - nvidia-settings
+    - nvidia-utils
+- name: "Nvidia-lts with linux-lts kernel"
+  description: "Installs nvidia-lts and linux-lts kernel - check Arch wiki nvidia"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - linux-lts
+    - linux-lts-headers
+    - nvidia-lts
+    - nvidia-settings
+    - nvidia-utils
+- name: "Nvidia with Linux-zen kernel"
+  description: "Installs nvidia and linux-zen kernel"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - linux-zen
+    - linux-zen-headers
+    - nvidia
+    - nvidia-settings
+    - nvidia-utils
+- name: "Cuda toolkit"
+  description: "Installs the Cuda Toolkit"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - cuda
+- name: "Intel-ucode"
+  description: "Installs intel-ucode - see Arch wiki microcode"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - intel-ucode
+- name: "Amd-ucode"
+  description: "Installs amd-ucode - see Arch wiki microcode"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+    - amd-ucode
